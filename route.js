@@ -1,10 +1,23 @@
-const { addNoteHandler } = require('./handler');
-
-const routes = [
-  {
-    method: 'POST',
-    path: '/notes',
-    handler: addNoteHandler,
+const routes = [{
+  method: 'GET',
+  path: '/',
+  handler: () => {
+    return 'Home Page';
   },
+},
+{
+  method: 'GET',
+  path: '/latihan',
+  handler: () => {
+    return 'Latihan';
+  },
+},
+{
+  method: '*',
+  path: '/{any*}',
+  handler: () =>{
+    return 'Tidak dapat ditemukan';
+  },
+},
 ];
 module.exports = routes;

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon CreateHTTP.js",
+    "start": "nodemon server.js",
     "lint": "eslint ./"
   },
   "keywords": [],
