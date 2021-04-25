@@ -6,7 +6,7 @@ const init = async () => {
     port: 5000,
     host: 'localhost',
   });
-  server.routes(routes);
+  server.route(routes);
   await server.start();
   console.log(`Server berjalan pada ${server.info.uri}`);
 };
